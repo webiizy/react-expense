@@ -1,16 +1,29 @@
 {
   "name": "router",
   "version": "0.1.0",
+  "jest": {
+    "verbose": true
+  },
   "private": true,
   "dependencies": {
+    "@babel/preset-env": "^7.4.3",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
     "react": "^16.8.6",
+    "react-addons-shallow-compare": "^15.6.2",
+    "react-app-rewired": "^2.1.1",
+    "react-dates": "^20.1.0",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-redux": "^7.0.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "uuid": "^3.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --watch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -21,5 +34,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1"
+  }
 }
