@@ -4,8 +4,8 @@ import moment from "moment";
 export const addExpense = ({
   description = "",
   note = "",
-  amount = undefined,
-  createdAt = moment().valueOf()
+  amount = 0,
+  createdAt = 0
 } = {}) => ({
   type: "ADD_EXPENSE",
   expense: {

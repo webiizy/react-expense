@@ -35,3 +35,17 @@ test("should setup add new expense action object", () => {
     }
   });
 });
+
+test("should setup add expense action object with default object", () => {
+  const action = addExpense();
+  expect(action).toEqual({
+    type: "ADD_EXPENSE",
+    expense: {
+      id: expect.any(String),
+      description: "",
+      amount: 0,
+      note: "",
+      createdAt: expect.any(Number)
+    }
+  });
+});
