@@ -11,6 +11,7 @@ export default function reducerFilter(state = defaultFilter, action) {
     case "SET_TEXT_FILTER":
       return { ...state, text: action.text };
     case "SET_SORTBY_FILTER":
+      //console.log(state, action);
       return { ...state, sortBy: action.sortBy };
     case "SET_STARTDATE_FILTER":
       return { ...state, startDate: action.startDate };
