@@ -7,7 +7,7 @@ export default function reducerExpense(state = defaultExpense, action) {
     case "ADD_EXPENSE":
       return [...state, action.expense];
     case "EDIT_EXPENSE":
-      console.log(action);
+      //console.log(action);
       return state.map(expense => {
         if (expense.id === action.id) {
           return { ...expense, ...action.update };

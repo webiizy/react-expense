@@ -4,9 +4,9 @@ export function getVisibleExpenses(
   expenses,
   { text, sortBy, startDate, endDate }
 ) {
-  console.log(
-    `sort by: ${sortBy} start date: ${startDate}, end date: ${endDate}`
-  );
+  // console.log(
+  //   `sort by: ${sortBy} start date: ${startDate}, end date: ${endDate}`
+  // );
   return expenses
     .filter(exp => {
       const textMatch = exp.description.toLowerCase().includes(text);
@@ -19,7 +19,7 @@ export function getVisibleExpenses(
         : true;
       //typeof exp.startDate !== "number" || exp.startDate > startDate;
 
-      console.log(startDateMatch);
+      //console.log(startDateMatch);
 
       return textMatch && startDateMatch && endDateMatch;
     })
